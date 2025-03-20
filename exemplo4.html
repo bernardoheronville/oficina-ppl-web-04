@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 4</title>
+    <style>
+        * {
+            font-size: 16px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        h1{
+            width: 40rem;
+            margin: 1rem auto;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            width: 40rem;
+            min-height: 25rem;
+            margin: 1rem auto;
+            border: 1px solid #a19d9d;
+            box-shadow: .5rem .5rem .3rem .01rem #a19d9d;
+        }
+        .mensagem{
+            background-color: #9709e3;
+            color: #89fc05;
+            text-align: center;
+            width: 8rem;
+            height: 8rem;
+            border-radius: 100%;
+            padding: 1rem;
+            font-weight: bold;
+            margin: 1rem;
+            box-shadow: .5rem .5rem .3rem .01rem #a19d9d;
+            font-size: 3rem;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <h1>Estrutura  de Repetição: do-while</h1>
+    <div class="container">
+        <script>
+            var opcao,num;
+            do {
+                num = parseInt(prompt("Informe um numero:"));
+                if (num % 2 == 0)
+                document.write(`<div class="mensagem">O numero${num} é par!</div>`);
+                else
+                document.write(`<div class="mensagem">O numero${num} é impar!</div>`);
+                opcao= confirm("Deseja informar outro numero?");
+            }while (opcao == true);
+        </script>
+    </div>
+</body>
+
+</html>
